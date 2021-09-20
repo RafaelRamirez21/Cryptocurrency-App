@@ -1,0 +1,27 @@
+@import 'global';
+.navbar{
+  flex: 0.2;
+  background-color: $backGroundColor;
+}
+
+.nav-container{
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  margin: 0px;
+  background-color: $backGroundColor;
+}
+
+.logo-container{
+  background-color: $backGroundColor;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  width: 100%;
+}
+.logo{
+  margin:0 0 0 15px;
+}
+.logo a{
+ color: white;
+}
