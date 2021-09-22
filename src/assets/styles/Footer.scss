@@ -1,0 +1,8 @@
+@import 'global';
+.footer {
+  background-color: $backGroundColor;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+}

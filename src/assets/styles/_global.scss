@@ -1,3 +1,4 @@
+@import '~antd/dist/antd.css';
 // variables
 $text-primary:#000;
 $bgPrimary:#fff;
@@ -10,4 +11,26 @@ $backGroundColor:#800000;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.ant-menu.ant-menu-dark{
+background-color: $backGroundColor;
+}
+
+.app{
+  display: flex;
+  overflow: hidden;
+}
+
+.navbar{
+  flex: 0.2;
+  background-color: rgb(0, 21, 41);
+}
+
+.main{
+  flex: 0.8;
+  width: 100%;
+  
+}
+.routes{
+  padding: 20px;
 }
