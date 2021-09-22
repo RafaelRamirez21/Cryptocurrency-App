@@ -27,7 +27,7 @@ const Navbar = () => {
         <Menu.Item
           key="2"
           icon={<FundOutlined />} >
-          <Link to="/cryptoCurrencies">CryptoCurrencies</Link>
+          <Link to="/cryptocurrencies">Cryptocurrencies</Link>
         </Menu.Item>
 
         <Menu.Item
