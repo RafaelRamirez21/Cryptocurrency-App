@@ -1,0 +1,24 @@
+@import 'global';
+.news-card{
+  min-height: 300px !important;
+}
+.news-card p{
+  color: black;
+  margin: 10px 0px !important;
+}
+.news-image-container{
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.news-title{
+width: 70%;
+font-size:24px ;
+
+}
+.provider-container{
+  display: flex;
+  justify-content: space-between;
+}
+.provider-name{
+  margin-left: 10px;
+}
