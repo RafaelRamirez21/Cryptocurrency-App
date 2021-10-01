@@ -4,21 +4,27 @@ const cryptoApiHeaders = {
   'x-rapidapi-key': 'a90922713bmshba206780c5c808ap141d69jsn1a63d2f513aa'
 }
 const baseUrl = 'https://coinranking1.p.rapidapi.com';
+const baseUrlHistory = 'https://api.coinranking.com/v2/'
 const createRequest = (url) => ({ url, headers: cryptoApiHeaders })
 export const cryptoApi = createApi({
   reducerPath: 'cryptoApi',
   baseQuery: fetchBaseQuery({ baseUrl }),
   endpoints: (builder) => ({
     getCryptos: builder.query({
-      query: (count) => createRequest(`/coins?limit=${count}`)
+      query: (count) => createRequest(`/coins?limit=${count}`),
     }),
     getCryptoDetails: builder.query({
-      query: (coinId) => createRequest(`/coin/${coinId}`)
+      query: (coinId) => createRequest(`/coin/${coinId}`),
+    }),
+    getCryptoHistories: builder.query({
+
+      query: ({ id, timeperiod }) => createRequest(`/coin/${id}/history/${timeperiod}`),
     })
   })
 });
 export const {
   useGetCryptosQuery,
-  useGetCryptoDetailsQuery
+  useGetCryptoDetailsQuery,
+  useGetCryptoHistoriesQuery
 } = cryptoApi;
 
