@@ -13,7 +13,7 @@
   gap: 10px;
   & .coin-name{
     font-weight: 900;
-    color: var(--pink);
+    color:  #800000
   }
   & p{
     font-size: 1rem;
@@ -23,10 +23,6 @@
 }
 
 
-.select-timeperiod{
-  width: 200px !important;
-  margin-top: 20px !important;
-}
 
 .stats-container{
   display: flex;
@@ -43,5 +39,131 @@
 .coin-value-statistics-heading p{
   font-size: 1rem;
   opacity: 0.9;
+}
+
+.coin-stats{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d9d9d9;
+  font-size: 1rem;
+  opacity: 0.9;
+  padding: 20px;
+
+}
+.select-timeperiod{
+  width: 200px !important;
+  margin-top: 20px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+.coin-details-heading{
+  font-weight: 700 !important;
+  margin-top: 20px !important;
+  color:  #800000 !important;
+}
+
+
+.coin-desc-link h2{
+  font-weight: 700;
+  color: #800000;
+}
+
+.coin-desc-link p{
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.coin-desc-link a{
+  color: #800000;
+}
+
+.coin-desc-link h3{
+  font-weight: 700;
+}
+
+.coin-desc{
+  flex: 0.5;
+}
+
+
+
+.coin-stats-name{
+  display: flex;
+  gap: 10px;
+  font-size: 1rem;
+}
+@media screen and (max-width:1000px){
+  .stats-container{
+      flex-direction: column;
+  }
+  .coin-desc-link{
+      flex-direction: column;
+  }
+  .stats-container h2{
+      margin-top: 0px;
+  }
+}
+.stats-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.stats-container h2{
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-top: 20px;
+  color: var(--pink);
+}
+
+.coin-value-statistics-heading p{
+  font-size: 1rem;
+  opacity: 0.9;
+}
+.coin-detail-container{
+  margin: 30px;
+}
+.coin-details-heading{
+  font-weight: 700 !important;
+  margin-top: 20px !important;
+  color:  #800000 !important;
+  margin-bottom: 20px !important;
+}
+.stats-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.stats{
+  font-weight: 800;
+}
+.coin-desc{
+  flex: 0.5;
+}
+
+.coin-links{
+  padding: 0px 20px;
+    flex: 0.5;
+}
+
+.coin-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 20px;
+}
+
+.link-name{
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.coin-link a{
+    color:#800000;
+    font-weight: 700;
+    font-size: 1rem;
 }
 
