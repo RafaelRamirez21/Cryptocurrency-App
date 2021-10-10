@@ -4,6 +4,7 @@ import { useGetCryptoNewsQuery } from '../../Services/cryptoNewsApi';
 import moment from 'moment';
 import '../../assets/styles/News.scss';
 import { useGetCryptosQuery } from '../../Services/cryptoApi';
+import Loader from '../Loader/Loader';
 const { Text, Title } = Typography;
 const { Option } = Select;
 const demoImage = 'http://coinrevolution.com/wp-content/uploads/2020/06/cryptonews.jpg';
@@ -12,7 +13,7 @@ const News = ({ simplified }) => {
   const { data } = useGetCryptosQuery(100);
   const { data: cryptoNews } = useGetCryptoNewsQuery({ newsCategory, count: simplified ? 6 : 12 })
 
-  if (!cryptoNews?.value) return 'Loading...'
+  if (!cryptoNews?.value) return <Loader />
 
   return (
     <Row gutter={[24, 24]}>
