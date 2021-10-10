@@ -33,7 +33,7 @@ const Navbar = () => {
             <MenuOutlined />
           </Button>
 
-          <Link to="/">Cryptoverse</Link>
+          <Link to="/">CryptoInfo</Link>
         </Typography.Title>
 
       </div>
